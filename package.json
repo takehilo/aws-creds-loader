@@ -1,0 +1,59 @@
+{
+  "name": "aws-creds-loader",
+  "version": "0.1.0",
+  "description": "AWS credentials loader for cli apps",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "nyc mocha",
+    "prepublish": "git diff --exit-code && npm run --if-present build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takehilo/aws-creds-loader.git"
+  },
+  "homepage": "https://github.com/takehilo/aws-creds-loader",
+  "keywords": [
+    "aws",
+    "cli"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": "Takehiro Kaneko <takehilo.kaneko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "aws-sdk": "^2.171.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "mocha-sinon": "^2.0.0",
+    "nyc": "^11.4.1",
+    "sinon": "^4.1.3",
+    "sinon-chai": "^2.14.0"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "ini": "^1.3.5"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
+  }
+}
