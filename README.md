@@ -1,5 +1,6 @@
 # aws-creds-loader
 [![Build Status](https://travis-ci.org/takehilo/aws-creds-loader.svg?branch=master)](https://travis-ci.org/takehilo/aws-creds-loader)
+[![Coverage Status](https://coveralls.io/repos/github/takehilo/aws-creds-loader/badge.svg?branch=add-coveralls-script)](https://coveralls.io/github/takehilo/aws-creds-loader?branch=add-coveralls-script)
 
 This library supports CLI apps to load credentials and region.
 
