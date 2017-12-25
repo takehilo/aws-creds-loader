@@ -1,4 +1,6 @@
 # aws-creds-loader
+[![Build Status](https://travis-ci.org/takehilo/aws-creds-loader.svg?branch=master)](https://travis-ci.org/takehilo/aws-creds-loader)
+
 This library supports CLI apps to load credentials and region.
 
 ## Installation
